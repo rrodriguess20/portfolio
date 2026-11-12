@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
+
 <body>
   <header>
     <nav aria-label="Navegação principal">
@@ -24,50 +25,138 @@
   </header>
 
   <main>
-    
-<section id="inicio" class="hero">
-  <div class="hero-content">
 
-    <span class="hero-greeting">
-      ✳ OLÁ, MUNDO!
-    </span>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
 
-    <h1>Olá, eu sou a Rebeca!</h1>
+        <span class="hero-greeting">
+          ✳ OLÁ, MUNDO!
+        </span>
 
-    <h2>
-      Desenvolvimento de software &
-      análise de dados
-    </h2>
+        <h1>Olá, eu sou a Rebeca!</h1>
 
-    <p>
-      Sou estudante de Ciência da Computação
-      e gosto de transformar ideias em soluções
-      por meio da tecnologia e criatividade.
-    </p>
+        <h2>
+          Desenvolvimento de software &
+          análise de dados
+        </h2>
 
-    <a href="#projetos" class="hero-button">
-      Conheça meus projetos ↗
-    </a>
+        <p>
+          Sou estudante de Ciência da Computação
+          e gosto de transformar ideias em soluções
+          por meio da tecnologia e criatividade.
+        </p>
 
-  </div>
+        <a href="#projetos" class="hero-button">
+          Conheça meus projetos ↗
+        </a>
 
-  <div class="hero-image">
-    <img
-      src="assets/images/portrait.jpeg"
-      alt="Retrato de Rebeca Rodrigues sorrindo"
-      width="480"
-      height="620"
-    >
-  </div>
-</section>
+      </div>
 
-      <section id="projetos" class="container">
-        <h2>Meus projetos</h2>
-      </section>
+      <div class="hero-image">
+        <img src="assets/images/portrait.jpeg" alt="Retrato de Rebeca Rodrigues sorrindo" width="480" height="620">
+      </div>
+    </section>
 
-      <section id="sobre" class="container">
-        <h2>Sobre mim</h2>
-      </section>
+
+    <section id="projetos" class="container">
+      <h2>Meus projetos</h2>
+
+      <p>
+        Conheça alguns dos projetos que venho
+        desenvolvendo durante minha trajetória.
+      </p>
+
+      <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+
+
+    <section id="sobre" class="container about">
+      <div class="about-header">
+        <span class="section-label">✳ UM POUCO SOBRE MIM</span>
+        <h2>Além do código...</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <p>
+            Sou estudante de Ciência da Computação no IFCE,
+            com interesse em desenvolvimento de software
+            e análise de dados.
+          </p>
+
+          <p>
+            Gosto de compreender problemas, explorar soluções
+            e aprender novas tecnologias. Também tenho interesse
+            em design, o que influencia minha maneira de
+            pensar e construir projetos.
+          </p>
+
+          <span class="about-highlight">
+            Tecnologia, curiosidade e criatividade. ✳
+          </span>
+
+
+          <div class="about-contact">
+            <h3>Vamos conversar?</h3>
+
+            <div class="contact-links">
+              <a href="https://github.com/rrodriguess20" target="_blank" rel="noopener noreferrer" class="contact-link"
+                aria-label="Meu perfil no GitHub">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/rrodriguess20" target="_blank" rel="noopener noreferrer"
+                class="contact-link" aria-label="Meu perfil no LinkedIn">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="mailto:rodriguess.rebeca20@gmail.com" class="contact-link" aria-label="Enviar um e-mail">
+                <i data-lucide="mail"></i>
+                <span>E-mail</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-info">
+          <div class="info-item">
+            <h3>Formação</h3>
+            <p>Ciência da Computação — IFCE</p>
+            <span>Graduação em andamento</span>
+          </div>
+
+          <div class="info-item">
+            <h3>Experiência</h3>
+            <p>Análise de dados e suporte acadêmico</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Interesses</h3>
+            <p>Desenvolvimento, dados e interfaces</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-skills">
+        <span>Java</span>
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Flutter</span>
+        <span>Git</span>
+      </div>
+    </section>
+
   </main>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  
 </body>
+
 </html>

@@ -242,3 +242,248 @@ nav ul a:focus-visible {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 32px;
 }
+
+
+/* Grade de projetos */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/* Card individual */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px;
+  background-color: var(--color-surface);
+  border-radius: 24px;
+
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Logo do projeto */
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+
+  background-color: var(--color-background);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.project-card h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Tecnologias utilizadas */
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.project-technologies span {
+  padding: 6px 12px;
+  border-radius: 50px;
+
+  background-color: var(--color-background);
+  color: var(--color-primary);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Sobre mim */
+
+.about {
+  padding-block: 100px;
+}
+
+.about-header {
+  margin-bottom: 40px;
+}
+
+.section-label {
+  display: block;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.about-highlight {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.about-info {
+  background-color: var(--color-surface);
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.info-item {
+  padding-block: 18px;
+}
+
+.info-item + .info-item {
+  border-top: 1px solid var(--color-matcha);
+}
+
+.info-item h3 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.info-item p {
+  font-weight: 700;
+}
+
+.info-item span {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+/* Tecnologias */
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.about-skills span {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .about {
+    padding-block: 60px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-info {
+    padding: 24px;
+  }
+}
+
+
+/* Contatos da seção Sobre mim */
+
+.about-contact {
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-matcha);
+}
+
+.about-contact h3 {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 16px;
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+
+  border-radius: 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-link:hover {
+  background-color: var(--color-matcha);
+  transform: translateY(-3px);
+}
+
+.contact-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
